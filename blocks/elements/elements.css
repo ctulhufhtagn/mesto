@@ -7,7 +7,7 @@
     grid-gap: 20px 17px;
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 1124px) {  
     
     .elements {
         grid-gap: 17px 14px;
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 797px) {
-
+    
     .elements {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -26,9 +26,9 @@
 }
 
 @media (max-width: 528px) {
-
+    
     .elements {
-        margin: 0 auto;   
+        margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 320px) {
-
+    
     .elements {
         padding: 0 19px;
     }
