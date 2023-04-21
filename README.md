@@ -18,3 +18,7 @@
 - Grid layout
 - БЭМ nested
 - Javascript
+
+## Ссылка на страницу
+
+https://ctulhufhtagn.github.io/mesto/
