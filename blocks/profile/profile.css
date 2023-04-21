@@ -1,0 +1,30 @@
+.profile { 
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    padding: 40px 0 51px;
+}
+
+@media (max-width: 989px) {
+
+    .profile {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 671px) {
+    
+    .profile {
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    .profile {
+        width: calc(100% - 38px);
+        margin: 0 auto;
+    }
+
+}

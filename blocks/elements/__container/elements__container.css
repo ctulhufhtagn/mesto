@@ -1,0 +1,19 @@
+.elements__container {
+    border-radius: 0 0 10% 10%;
+    padding: 0 15px 0 21px;
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (max-width: 1124px) {
+    
+    .elements__container {
+        padding: 0 13px 0 19px;
+    }
+
+}
