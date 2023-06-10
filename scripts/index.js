@@ -1,11 +1,11 @@
-let profile__editButton = document.querySelector('.profile__edit-btn');
+let profileEditButton = document.querySelector('.profile__edit-btn');
 let popup = document.querySelector('.popup');
-let popup__close = document.querySelector('.popup__close-btn');
-let profile__title = document.querySelector('.profile__title');
-let profile__text = document.querySelector('.profile__text');
-let popup__btn = document.querySelector('.popup__btn');
-let popup__name = document.querySelector('.popup__name');
-let popup__description = document.querySelector('.popup__description');
+let popupCloseBtn = document.querySelector('.popup__close-btn');
+let profileTitle = document.querySelector('.profile__title');
+let profileText = document.querySelector('.profile__text');
+let popupBtn = document.querySelector('.popup__btn');
+let popupName = document.querySelector('.popup__name');
+let popupDescription = document.querySelector('.popup__description');
 
 function popupOpen() {
     popup.classList.add('popup_opened');
@@ -16,11 +16,11 @@ function popupClose() {
 }
 
 function formSubmit (evt) {
-    profile__title.textContent = popup__name.value;
-    profile__text.textContent = popup__description.value;
+    profileTitle.textContent = popupName.value;
+    profileText.textContent = popupDescription.value;
     popup.classList.remove('popup_opened');
 }
 
-profile__editButton.addEventListener('click', popupOpen);
-popup__close.addEventListener('click', popupClose);
-popup__btn.addEventListener('click', formSubmit);
+profileEditButton.addEventListener('click', popupOpen);
+popupCloseBtn.addEventListener('click', popupClose);
+popupBtn.addEventListener('click', formSubmit);
