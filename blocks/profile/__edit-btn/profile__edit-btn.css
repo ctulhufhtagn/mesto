@@ -12,6 +12,7 @@
 }
 
 .profile__edit-btn:hover {
+    cursor: pointer;
     opacity: .6;
 }
 
@@ -39,8 +40,6 @@
     
     .profile__edit-btn {
         margin-top: 8px;
-        width: 18px;
-        height: 18px;
     }
 
 }
