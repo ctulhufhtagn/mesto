@@ -1,5 +1,4 @@
 .profile { 
-    position: relative;
     box-sizing: border-box;
     display: flex;
     padding: 40px 0 51px;
@@ -16,7 +15,7 @@
 @media (max-width: 320px) {
     
     .profile {
-        width: calc(100% - 38px);
+        width: calc(100% - 19px);
         margin: 0 auto;
     }
 

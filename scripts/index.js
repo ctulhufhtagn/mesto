@@ -4,18 +4,22 @@ let popupCloseBtn = document.querySelector('.popup__close-btn');
 let profileTitle = document.querySelector('.profile__title');
 let profileText = document.querySelector('.profile__text');
 let popupBtn = document.querySelector('.popup__btn');
-let popupName = document.querySelector('.popup__name');
-let popupDescription = document.querySelector('.popup__description');
+let popupName = document.querySelector('.popup__input_type_name');
+let popupDescription = document.querySelector('.popup__input_type_description');
+let formSubmit = document.querySelector('.formSubmit');
 
 function popupOpen() {
     popup.classList.add('popup_opened');
+    profileTitle.textContent = popupName.value
+    profileText.textContent = popupDescription.value;
 }
 
 function popupClose() {
     popup.classList.remove('popup_opened');
 }
 
-function formSubmit (evt) {
+function submit (evt) {
+    evt.preventDefault();
     profileTitle.textContent = popupName.value;
     profileText.textContent = popupDescription.value;
     popup.classList.remove('popup_opened');
@@ -23,4 +27,4 @@ function formSubmit (evt) {
 
 profileEditButton.addEventListener('click', popupOpen);
 popupCloseBtn.addEventListener('click', popupClose);
-popupBtn.addEventListener('click', formSubmit);
+formSubmit.addEventListener('submit', submit);

@@ -15,15 +15,7 @@
 @media (max-width: 671px) {
     
     .profile__container {
-        gap: 10px;
-    }
-
-}
-
-@media (max-width: 320px) {
-    
-    .profile__container {
-        margin-top: 22.25px;
+        gap: 10px;  
     }
 
 }

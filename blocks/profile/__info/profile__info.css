@@ -3,3 +3,11 @@
     color: #FFFFFF;
     align-self: center;
 }
+
+@media (max-width: 320px) {
+    
+    .profile__info {
+        margin: 22.25px auto 36px;
+    }
+
+}
