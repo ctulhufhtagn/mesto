@@ -2,14 +2,14 @@
     margin-left: auto;
     right: 0;
     padding: 0;
-    background-image: url(../../../images/addButton.svg);
+    background-image: url(../../../images/addButton-big.svg);
     background-repeat: no-repeat;
     background-position: center;
     align-self: center;
     width: 150px;
     height: 50px;
     background-color: #000;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     transition: opacity .2s linear;
 }
 
@@ -29,6 +29,7 @@
 @media (max-width: 989px) {
 
     .profile__btn {
+        background-image: url(../../../images/addButton.svg);
         position: relative;
         background-size: cover;
         width: 100%;
