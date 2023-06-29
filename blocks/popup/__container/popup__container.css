@@ -9,15 +9,7 @@
     padding: 34px 36px 37px;
 }
 
-@media (max-width: 471px) {
-
-    .popup__container {
-        width: calc(100% - 19px);
-    }
-
-}
-
-@media (max-width: 320px) {
+@media (max-width: 519px) {
 
     .popup__container {
         width: 282px;
