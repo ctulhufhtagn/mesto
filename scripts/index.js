@@ -10,7 +10,7 @@ let formSubmit = document.querySelector('.popup__form-submit');
 
 function popupOpen() {
     popup.classList.add('popup_opened');
-    profileTitle.textContent = popupName.value
+    popupName.value  = profileTitle.textContent
     profileText.textContent = popupDescription.value;
 }
 
