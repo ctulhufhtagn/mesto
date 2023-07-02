@@ -10,8 +10,8 @@ let formSubmit = document.querySelector('.popup__form-submit');
 
 function popupOpen() {
     popup.classList.add('popup_opened');
-    popupName.textContent  = profileTitle.value
-    profileText.textContent = popupDescription.value;
+    popupName.value = profileTitle.textContent
+    popupDescription.value = profileText.textContent;
 }
 
 function popupClose() {
@@ -20,8 +20,8 @@ function popupClose() {
 
 function submit (evt) {
     evt.preventDefault();
-    popupName.value = profileTitle.textContent;
-    popupDescription.value = profileText.textContent; 
+    profileTitle.textContent = popupName.value;
+    profileText.textContent = popupDescription.value; 
     popup.classList.remove('popup_opened');
 }
 
