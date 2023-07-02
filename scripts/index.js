@@ -20,8 +20,8 @@ function popupClose() {
 
 function submit (evt) {
     evt.preventDefault();
-    profileTitle.textContent = popupName.value;
-    profileText.textContent = popupDescription.value;
+    popupName.value = profileTitle.textContent;
+    popupDescription.value = profileText.textContent; 
     popup.classList.remove('popup_opened');
 }
 
